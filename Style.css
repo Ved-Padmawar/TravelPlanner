@@ -1,0 +1,236 @@
+/* Global Styles */
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+header .navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main {
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Recommendations Page */
+
+.recommendation-card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.recommendation-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.recommendation-card .card-body {
+  padding: 20px;
+}
+
+.recommendation-card .card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recommendation-card .card-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.recommendation-card .book-btn {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.recommendation-card .book-btn:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+/* Flight Booking Page */
+
+.flight-search-bar {
+  margin-bottom: 30px;
+}
+
+.flight-search-bar .form-control {
+  border-radius: 30px;
+}
+
+.flight-search-bar .search-btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.flight-search-bar .search-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.flight-search-results {
+  margin-bottom: 30px;
+}
+
+.flight-search-results .flight-card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.flight-search-results .flight-card .card-body {
+  padding: 20px;
+}
+
+.flight-search-results .flight-card .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.flight-search-results .flight-card .card-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.flight-search-results .flight-card .book-btn {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.flight-search-results .flight-card .book-btn:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+/* Hotel Booking Page */
+
+.hotel-search-results {
+  margin-bottom: 30px;
+}
+
+.hotel-search-results .hotel-card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-search-results .hotel-card .card-body {
+  padding: 20px;
+}
+
+.hotel-search-results .hotel-card .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hotel-search-results .hotel-card .card-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.hotel-search-results .hotel-card .book-btn {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hotel-search-results .hotel-card .book-btn:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+/* Activity Booking Page */
+
+.activity-search-results {
+  margin-bottom: 30px;
+}
+
+.activity-search-results .activity-card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.activity-search-results .activity-card .card-body {
+  padding: 20px;
+}
+
+.activity-search-results .activity-card .card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.activity-search-results .activity-card .card-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.activity-search-results .activity-card .book-btn {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.activity-search-results .activity-card .book-btn:hover {
+  background-color: #218838;
+  border-color: #218838;
+}

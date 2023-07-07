@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Planner - Hotel Booking</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Existing styles */
+    /* ... */
+
+    /* Additional styles for the Hotel Booking page */
+    .search-bar {
+      margin-bottom: 20px;
+    }
+
+    .search-bar input {
+      height: 40px;
+      width: 300px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+    }
+
+    .search-bar button {
+      height: 40px;
+      margin-left: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .hotel-results {
+      margin-bottom: 30px;
+    }
+
+    .hotel-card {
+      border: none;
+      border-radius: 10px;
+      background-color: #fff;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .hotel-card .card-body {
+      padding: 20px;
+    }
+
+    .hotel-card .card-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .hotel-card .card-info {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .hotel-card .book-btn {
+      background-color: #28a745;
+      border-color: #28a745;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .hotel-card .book-btn:hover {
+      background-color: #218838;
+      border-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <!-- ... (existing navigation code) ... -->
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Hotel Booking</h1>
+    <div class="search-bar">
+      <input type="text" id="destination-input" placeholder="Enter destination">
+      <button id="search-hotels-btn" class="btn btn-primary">Search</button>
+    </div>
+
+    <div class="hotel-results">
+      <div class="hotel-card">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Example 1</h5>
+          <p class="card-info">Address: 123 Main Street, City, Country</p>
+          <p class="card-info">Price: $100 per night</p>
+          <button class="btn btn-success book-btn">Book</button>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Example 2</h5>
+          <p class="card-info">Address: 456 Elm Street, City, Country</p>
+          <p class="card-info">Price: $150 per night</p>
+          <button class="btn btn-success book-btn">Book</button>
+        </div>
+      </div>
+
+      <div class="hotel-card">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Example 3</h5>
+          <p class="card-info">Address: 789 Oak Street, City, Country</p>
+          <p class="card-info">Price: $200 per night</p>
+          <button class="btn btn-success book-btn">Book</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-3">
+    <!-- ... (existing footer code) ... -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
