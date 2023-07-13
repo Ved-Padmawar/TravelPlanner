@@ -1,42 +1,80 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.navbar {
+  background-color: #333;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+/* Main Styles */
+.container {
+  padding-top: 30px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
 .recommendation-card {
-  border: none;
-  border-radius: 10px;
-  background-color: #fff;
-  margin-bottom: 30px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
 }
 
 .recommendation-card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
 }
 
-.recommendation-card .card-body {
-  border:1px solid black;
-  padding: 20px;
-}
-
-.recommendation-card .card-title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333;
+.card-title {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-.recommendation-card .card-info {
-  font-size: 14px;
+.card-info {
   color: #666;
 }
 
-.recommendation-card .book-btn {
-  background-color: #28a745;
-  border-color: #28a745;
-  font-weight: 600;
-  text-transform: uppercase;
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.recommendation-card .book-btn:hover {
-  background-color: #218838;
-  border-color: #218838;
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.recommendation-card {
+  animation: fade-in 0.5s ease-in-out;
 }
