@@ -1,6 +1,8 @@
+package com.travelplanner.travelservice.models;
 import java.sql.*;
 import java.util.*;
-public class LoginSystem {
+public class LoginSystem 
+{
     private static final String DB_URL = "jdbc:mysql://localhost:3306/mydatabase";
     private static final String DB_USER = "username";
     private static final String DB_PASSWORD = "password";
@@ -82,6 +84,7 @@ public class LoginSystem {
     {
         System.out.print(prompt);
         Scanner sc = new Scanner(System.in);
+        sc.close();
         return sc.nextLine();
     }
 }
