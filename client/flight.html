@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <button type="submit" class="btn btn-primary search-btn">Search</button>
+                    <button type="submit" class="btn btn-primary search-btn" id="searchButton">Search</button>
                 </div>
             </div>
         </form>
@@ -97,10 +97,31 @@
 </footer>
 
 <script>
-  // Fetch and process JSON data
-  fetch('flight_data.json')
-    .then(response => response.json())
-    .then(data => {
+    document.getElementById("searchButton").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Get the values from the input fields
+    var origin = document.getElementById("origin").value;
+    var destination = document.getElementById("destination").value;
+    var dateFrom = document.getElementById("dateFrom").value;
+
+    // Create an object to hold the input values
+    var inputData = {
+        origin: origin,
+        destination: destination,
+        dateFrom: dateFrom
+    };
+    console.log(origin);
+    console.log(destination);
+    console.log(dateFrom);
+
+
+    // Send a request to the backend
+    // Fetch and process JSON data
+    fetch('flight_data.json')
+            .then(response => response.json())
+            .then(data => 
+    {
       // Access the flight data from the JSON
       const flights = data.data;
 
@@ -134,6 +155,8 @@
       });
     })
     .catch(error => console.error('Error fetching flight data:', error));
+});
+
 </script>
 </body>
 </html>
