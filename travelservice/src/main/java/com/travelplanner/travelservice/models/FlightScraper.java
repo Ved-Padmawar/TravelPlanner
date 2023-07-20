@@ -26,8 +26,16 @@ public class FlightScraper {
             // Format the boarding date to match the API's date format
             String boardingDateFormatted = boardingDate.replace("/", "%2F");
 
+            System.out.print("Enter return date (DD/MM/YYYY): ");
+            String returnDate = reader.readLine();
+
+            // Format the boarding date to match the API's date format
+            String returnDateFormatted = returnDate.replace("/", "%2F");
+
+            
+
             // Construct the API URL with the dynamic inputs
-            String apiUrl = "https://api.tequila.kiwi.com/v2/search?fly_from=" + fromLoc + "&fly_to=" + toLoc + "&date_from=" + boardingDateFormatted + "&date_to=" + boardingDateFormatted + "&max_stopovers=1&vehicle_type=aircraft&limit=20&curr=INR&sort=price";
+            String apiUrl = "https://api.tequila.kiwi.com/v2/search?fly_from=" + fromLoc + "&fly_to=" + toLoc + "&date_from=" + boardingDateFormatted + "&date_to=" + returnDateFormatted + "&max_stopovers=1&vehicle_type=aircraft&limit=20&curr=INR&sort=price";
 
             // Set the API key in the headers
             String apiKey = "1wU6jIQnCeBsJ12o94xH5xr0IpQ2YU_k";
