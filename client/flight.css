@@ -12,7 +12,10 @@ body {
 /* Header Styles */
 
 .navbar {
-  background-color: #333;
+  background: linear-gradient(to right, #007bff, #333); /* Added gradient */
+  display: flex; /* Added flexbox */
+  align-items: center; /* Added flexbox */
+  justify-content: space-between; /* Added flexbox */
 }
 
 .navbar-nav.nav-link {
@@ -51,67 +54,72 @@ body {
   border-radius: 8px;
   padding: 12px 20px;
   font-weight: bold;
-  transition: background-color 0.3s ease-in-out;
 }
 
 .search-btn:hover {
-  background-color: #0056b3;
+    background-color:#0056b3; /* Changed color */
 }
 
 /* Flight Card Styles */
 .flight-card {
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+    background-color:#f5f5f5;
+    border-radius:8px;
+    margin-bottom:20px;
+    padding:20px;
+    box-shadow:0px2px4px rgba(0,0,0,0.1);
+    transition:transform .3s ease-in-out; /* Added transition */
 }
 
 .flight-card:hover {
-  transform: scale(1.05);
+    transform : scale(1.05); /* Added transform */
 }
 
 .card-title {
-  font-size: 20px;
-  margin-bottom: 10px;
+    font-size :20px;
+    margin-bottom :10px;
 }
 
 .card-info {
-  color: #666;
+    color :#666;
 }
 
 .book-btn {
-  background-color: #28a745;
-  border-color: #28a745;
-  margin-top: 10px;
+    background-color:#28a745;
+    border-color:#28a745;
+    margin-top :10px;
 }
 
 .book-btn:hover {
-  background-color: #218838;
-  border-color: #1e7e34;
+    background-color:#218838; /* Changed color */
+    border-color:#1e7e34; /* Changed color */
 }
 
 /* Footer Styles */
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+    background : linear-gradient(to right,#007bff,#333); /* Added gradient */
+    color :#fff;
+    padding :20px 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align : center;
+    display : flex; /* Added flexbox */
+    align-items : center; /* Added flexbox */
+    justify-content : center; /* Added flexbox */
 }
 
-/* Animations */
+/* Media Queries */
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.flight-card {
-  animation: fade-in 0.5s ease-in-out;
+@media (max-width :768px) { /* Added media query */
+    .navbar-nav.nav-link { 
+        display : none; /* Hide nav links on small screens */
+    }
+    
+    .flight-search-bar .form-group { 
+        width :100%; /* Make input boxes full width on small screens */
+        display : block; /* Make input boxes stack vertically on small screens */
+    }
+    
 }
