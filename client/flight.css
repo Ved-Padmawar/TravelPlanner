@@ -99,11 +99,11 @@ body {
 footer {
     background : linear-gradient(to right,#007bff,#333); /* Added gradient */
     color :#fff;
-    padding :20px 0;
+    padding :20px0;
     position: fixed;
-    width: 100%;
-    left: 0;
     bottom: 0;
+    left: 0;
+    width: 100%;
     text-align : center;
     display : flex; /* Added flexbox */
     align-items : center; /* Added flexbox */
