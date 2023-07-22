@@ -1,3 +1,73 @@
+.parent {
+  width: 100%;
+  justify-content: space-content;
+  display: flex;
+  gap: 4rem !important;
+}
+/* Add custom styles to adjust the layout */
+.search-bar {
+  max-width: 600px;
+  float:left
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: max-content;
+}
+
+label {
+  font-weight: 700;
+  display: block;
+}
+
+.search1{
+    width: max-content;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color 0.4s ease;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
