@@ -37,9 +37,8 @@
                 <input type="text" class="form-control" placeholder="Enter your location" aria-label="Origin" id="origin">
                 <input type="text" class="form-control" placeholder="Enter your destination" aria-label="Destination" id="destination">
                 <input type="date" class="form-control" aria-label="Date From" id="dateFrom">
-                <input type="date" class="form-control" aria-label="Date To" id="dateTo">
                 <div class="input-group-append align-items-start">
-                  <button type="submit" class="btn btn-primary search-btn">Search</button>
+                  <button type="submit" class="btn btn-primary search-btn" id="searchBtn">Search</button>
                 </div>
             </div>
         </form>
@@ -71,6 +70,8 @@
             </div>
         </div>
     </div>
+</main>
+
 
 <!-- JavaScript for the chat widget -->
 
@@ -94,6 +95,46 @@
       token: "04f60d27-6f44-449c-b4e2-30432bcd9dab",
     });
   </script>
+<!--    <script>-->
+<!--  // Fetch and process JSON data-->
+<!--  fetch('flight_data.json')-->
+<!--    .then(response => response.json())-->
+<!--    .then(data => {-->
+<!--      // Access the flight data from the JSON-->
+<!--      const flights = data.data;-->
+
+<!--      // Create flight cards dynamically-->
+<!--      const flightResultsElement = document.querySelector('.flight-search-results');-->
+<!--      flights.forEach(flight => {-->
+<!--        const flightCard = document.createElement('div');-->
+<!--        flightCard.classList.add('flight-card');-->
+
+<!--        const cardBody = document.createElement('div');-->
+<!--        cardBody.classList.add('card-body');-->
+
+<!--        const cardTitle = document.createElement('h5');-->
+<!--        cardTitle.classList.add('card-title');-->
+<!--        cardTitle.textContent = `${flight.cityCodeFrom} to ${flight.cityCodeTo}`;-->
+
+<!--        const cardInfo = document.createElement('p');-->
+<!--        cardInfo.classList.add('card-info');-->
+<!--        cardInfo.innerHTML = `Flight ID: <strong>${flight.id}</strong><br>Base Fare: ${flight.price_dropdown.base_fare}`;-->
+
+<!--        const bookButton = document.createElement('button');-->
+<!--        bookButton.classList.add('btn', 'btn-success', 'book-btn');-->
+<!--        bookButton.textContent = 'Book';-->
+
+<!--        cardBody.appendChild(cardTitle);-->
+<!--        cardBody.appendChild(cardInfo);-->
+<!--        cardBody.appendChild(bookButton);-->
+<!--        flightCard.appendChild(cardBody);-->
+
+<!--        flightResultsElement.appendChild(flightCard);-->
+<!--      });-->
+<!--    })-->
+<!--    .catch(error => console.error('Error fetching flight data:', error));-->
+<!--</script>-->
+<script src="flight.js"></script>
     <footer>
         <div class="container">
             <p>&copy; 2023 TripHive. All rights reserved.</p>
