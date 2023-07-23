@@ -1,13 +1,18 @@
 package com.travelplanner.travelservice.models;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.BufferedWriter;
-import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import org.json.JSONArray;
 import org.json.JSONObject;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class FlightScraper {
     public static void main(String[] args) {
@@ -58,19 +63,41 @@ public class FlightScraper {
                 try (BufferedWriter fileWriter = new BufferedWriter(new FileWriter("client/flight_data.json"))) {
                     fileWriter.write(data.toString(4));
                 }
-
                 System.out.println("Flight data saved to 'flight_data.json' file.");
+
+                // Create a list to store the flight data
+                List<JSONObject> dataArray = new ArrayList<>();
+                JSONArray dataJSONArray = data.getJSONArray("data");
+                for (int i = 0; i < dataJSONArray.length(); i++) {
+                    dataArray.add(dataJSONArray.getJSONObject(i));
+                }
+
+                // Sort the data based on base fares in ascending order
+                Collections.sort(dataArray, (a, b) -> {
+                    double baseFareA = a.getJSONObject("price_dropdown").getDouble("base_fare");
+                    double baseFareB = b.getJSONObject("price_dropdown").getDouble("base_fare");
+                    return Double.compare(baseFareA, baseFareB);
+                });
+
+                // Display the first 10 flight fares
+                System.out.println("Top 10 Flight Fares (Sorted in Ascending Order):");
+                for (int i = 0; i < 10 && i < dataArray.size(); i++) {
+                    JSONObject flight = dataArray.get(i);
+                    JSONObject priceDropdown = flight.getJSONObject("price_dropdown");
+                    double baseFare = priceDropdown.getDouble("base_fare");
+                    String cityFrom = flight.getString("cityFrom");
+                    String cityTo = flight.getString("cityTo");
+//                    System.out.println("Flight " + (i + 1) + " - Base Fare: " + baseFare);
+                    System.out.println("Flight " + (i + 1) + " - From: " + cityFrom + ", To: " + cityTo + ", Base Fare: " + baseFare);
+                }
             } else {
                 System.out.println("Error occurred while fetching flight data. Response code: " + responseCode);
             }
-
             connection.disconnect();
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
-    
-
-    
 }
-
