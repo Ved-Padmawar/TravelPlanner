@@ -1,4 +1,3 @@
-
 // Get the search button element
 const searchBtn = document.getElementById('searchBtn');
 
@@ -17,16 +16,16 @@ function handleSearch(event) {
   console.log(origin)
 
   // Construct the URL with the dynamic inputs
-  // const apiUrl = `https://api.tequila.kiwi.com/v2/search?fly_from=${origin}&fly_to=${destination}&date_from=${dateFrom}&date_to=${dateFrom}&max_stopovers=1&vehicle_type=aircraft&limit=20&curr=INR&sort=price`;
-  // const apiKey = "1wU6jIQnCeBsJ12o94xH5xr0IpQ2YU_k";
+  const apiUrl = `https://api.tequila.kiwi.com/v2/search?fly_from=${origin}&fly_to=${destination}&date_from=${dateFrom}&date_to=${dateFrom}&max_stopovers=1&vehicle_type=aircraft&limit=20&curr=INR&sort=price`;
+  const apiKey = "1wU6jIQnCeBsJ12o94xH5xr0IpQ2YU_k";
 
-  const apiUrl = `http://localhost:8080/flights/search?fromLoc=${origin}&toLoc=${destination}&date_from=${dateFrom}`;
+
 
   fetch(apiUrl, {
                           method: 'GET',
                           headers: {
                               'Accept': 'application/json',
-                              // 'apikey': apiKey
+                              'apikey': apiKey
                           }
                       })
     .then(response => response.json())
@@ -58,11 +57,11 @@ function updateFlightFares(data) {
 
     const cardTitle = document.createElement('h5');
     cardTitle.classList.add('card-title');
-    cardTitle.textContent = `${flight.cityFrom} to ${flight.cityTo}`;
+    cardTitle.textContent = `${flight.cityCodeFrom} to ${flight.cityCodeTo}`;
 
     const cardInfo = document.createElement('p');
     cardInfo.classList.add('card-info');
-    cardInfo.innerHTML = `Flight ID: <strong>${flight.id}</strong><br>Base Fare: ${flight.baseFare}`;
+    cardInfo.innerHTML = `Flight ID: <strong>${flight.id}</strong><br>Base Fare: ${flight.price_dropdown.base_fare}`;
 
     const bookButton = document.createElement('button');
     bookButton.classList.add('btn', 'btn-success', 'book-btn');
