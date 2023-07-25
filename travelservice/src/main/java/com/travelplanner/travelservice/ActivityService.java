@@ -1,4 +1,4 @@
-package com.travelplanner.travelservice.models;
+package com.travelplanner.travelservice;
 
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
