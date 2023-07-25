@@ -1,16 +1,9 @@
 package com.travelplanner.travelservice;
 
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Connection;
 import java.util.Scanner;
 import java.sql.*;
 import org.json.*;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
 
 public class ActivityService {
     public static void main(String[] args) {
@@ -34,6 +27,7 @@ public class ActivityService {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        sc.close();
     }
 
     private static JSONArray getActivitiesForState(Connection connection, String stateName) throws SQLException {
