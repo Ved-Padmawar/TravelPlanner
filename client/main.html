@@ -1,67 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Travel Planner - Recommendations</title>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Css Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+            rel="stylesheet"
+            media=" screen and (max-width:768px)"
+            href="/css/mobile.css"
+    />
+    <!-- unicons -->
+    <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- favicon -->
+    <link rel="icon" href="/Imgs/icons/Vector.png" />
+
+    <!-- script tag -->
+    <script defer src="/JS/script.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Title -->
+    <title>TripHive</title>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">TripHive</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="flight.html">Flight Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hotel.html">Hotel Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activity.html">Activity Booking</a>
-                    </li>
-                </ul>
+<!-- Showcase -->
+<main class="main" id="home">
+    <!-- Header -->
+    <header class="header">
+        <!-- logo -->
+        <div class="logo">
+            <!-- <img src="imgs/Logo/logo.svg" alt="TripHive" /> -->
+            <h2>RECOMMENDATIONS</h2>
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar">
+            <ul class="navlists">
+                <li class="navlist"><a href="activity.html">Activity</a></li>
+                <li class="navlist"><a href="hotel.html">Hotel</a></li>
+                <li class="navlist"><a href="flight.html">Flights</a></li>
+            </ul>
+        </nav>
+
+        <!-- user || navigator -->
+        <div class="user-profile">
+            <div class="profile-name">
+                <h2>
+                    <span class="hello"> Welcome To </span>
+                    <span class="indiviual-name"> TripHive  </span>
+                </h2>
+            </div>
+
+            <div class="profile-pic">
+                <img
+                        src="https://dcassetcdn.com/design_img/3376436/41418/41418_18519268_3376436_8bedf03b_image.jpg"
+                        alt=""
+                />
             </div>
         </div>
-    </nav>
-</header>
+    </header>
 
-<main class="container">
-    <h1>Recommended Places to Visit</h1>
-    <hr>
-    <div class="recommendation-card">
-        <div class="card-body">
-            <h5 class="card-title">Place 1</h5>
-            <p class="card-info">Description of Place 1</p>
-        </div>
+    <!-- showcase-content -->
+    <div class="showcase-content">
+        <h1>Discover the most engaging places</h1>
+        <a href="https://earth.google.com/web/" target="_blank" class="showcase-button">
+            <img src="/Imgs/icons/globe.png" alt="" /> Discover on 3D globe!</a>
     </div>
 
-    <div class="recommendation-card">
-        <div class="card-body">
-            <h5 class="card-title">Place 2</h5>
-            <p class="card-info">Description of Place 2</p>
+    <div>
+        <div>
+            <div>
+                <h6>space</h6>
+            </div>
         </div>
     </div>
+    <!-- showcase-search -->
+    <section class="Flight-top" id="flights">
+        <div class="container">
+            <!-- <div class="title-container">
+              <h2 class="section-title"> Flights</h2>
+              <div class="section-button hotel-button">view all <img src="/Imgs/icons/bleft.png" alt=""></div>
+            </div> -->
+            <!-- cards -->
+            <div class="flight-card">
 
-    <div class="recommendation-card">
-        <div class="card-body">
-            <h5 class="card-title">Place 3</h5>
-            <p class="card-info">Description of Place 3</p>
+                <!-- card 1 -->
+                <div class="flight-cards">
+                    <img src="img/a.webp" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Salerno, Italy</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+                <!-- card 2 -->
+                <div class="flight-cards">
+                    <img src="img/b.webp" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Lake Como, Italy</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+                </div>
+                <!-- card 3 -->
+                <div class="flight-cards">
+                    <img src="img/c.jpg" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Udaipur, India</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=2.png" alt=""></div>
+                </div>
+                <!-- card 4 -->
+                <div class="flight-cards">
+                    <img src="img/d.avif" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Los Angeles, United States</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+                <!-- card 5 -->
+                <div class="flight-cards off">
+                    <img src="https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Dominican Republic</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+                </div>
+                <!-- card 6 -->
+                <div class="flight-cards off">
+                    <img src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" width="320" height="380">
+                    <h5>Flight 6</h5>
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Indonesia</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </section>
+
+
+    <!-- <h1 class = "nik">RECOMMENDATIONS:-</h1> -->
+    <section class="Flight-top" id="flights2">
+        <div class="container">
+            <!-- <div class="title-container">
+              <h2 class="section-title"> Flights</h2>
+              <div class="section-button hotel-button">view all <img src="/Imgs/icons/bleft.png" alt=""></div>
+            </div> -->
+            <!-- cards -->
+            <div class="flight-card">
+                <!-- card 1 -->
+                <div class="flight-cards">
+                    <img src="img/e.jpg" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Hyderabad, Telangana</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+                <!-- card 2 -->
+                <div class="flight-cards">
+                    <img src="img/j.jpg" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Lake Como, Italy</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+                </div>
+                <!-- card 3 -->
+                <div class="flight-cards">
+                    <img src="img/i.jpg" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Udaipur, India</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=2.png" alt=""></div>
+                </div>
+                <!-- card 4 -->
+                <div class="flight-cards">
+                    <img src="img/h.webp" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Los Angeles, United States</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=5.png" alt=""></div>
+                </div>
+                <!-- card 5 -->
+                <div class="flight-cards off">
+                    <img src="https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Dominican Republic</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+                </div>
+                <!-- card 6 -->
+                <div class="flight-cards off">
+                    <img src="https://images.unsplash.com/photo-1525596662741-e94ff9f26de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="" width="320" height="380">
+                    <h6><img src="/Imgs/icons/map-pin-line.png" alt=""> Indonesia</h6>
+                    <div class="ratings"> <img src="/Imgs/icons/rating=4.png" alt=""></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </main>
 
+<!-- footer -->
 <footer>
-    <div class="container">
+    <div class="footr">
         <p>&copy; 2023 TripHive. All rights reserved.</p>
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<div class="toggleOn"><i class="uil uil-align-center-alt"></i></div>
+<div class="toggleClose"><i class="uil uil-multiply"></i></div>
 </body>
 </html>
