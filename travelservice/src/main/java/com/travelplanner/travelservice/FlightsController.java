@@ -1,5 +1,4 @@
 package com.travelplanner.travelservice;
-
 import com.google.gson.Gson;
 import com.travelplanner.travelservice.models.flightModel;
 import java.io.BufferedReader;
