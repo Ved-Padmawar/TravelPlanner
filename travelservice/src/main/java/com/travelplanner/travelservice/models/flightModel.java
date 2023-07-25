@@ -40,4 +40,5 @@ public class flightModel {
     {
         this.baseFare = baseFare;
     }
+
 }

@@ -23,6 +23,10 @@
   --conatiner--size: 73%;
 }
 
+.logo h2{
+    color : white;
+}
+
 .nik{
   color : white;
   margin-top: 2em;
@@ -93,13 +97,17 @@ img {
 }
 
 /* main */
+/* style.css */
 
-.main {
-  background: url("client/imgs/Showcase Cover.png") no-repeat center center/cover;
+
+.main{
   min-height: 800px;
-  border-radius: 0 0 50px 50px;
-  height: 100vh;
+  /*background-img: url("../img/Cover.png") no-repeat center fixed;
+  background-size: cover;*/
+  background:url("./img/Cover.png") no-repeat center fixed;
+  background-size:cover
 }
+
 
 /* headEr */
 .header {
