@@ -58,11 +58,11 @@ function updateFlightFares(data) {
 
     const cardTitle = document.createElement('h5');
     cardTitle.classList.add('card-title');
-    cardTitle.textContent = `${flight.cityCodeFrom} to ${flight.cityCodeTo}`;
+    cardTitle.textContent = `${flight.cityFrom} to ${flight.cityTo}`;
 
     const cardInfo = document.createElement('p');
     cardInfo.classList.add('card-info');
-    cardInfo.innerHTML = `Flight ID: <strong>${flight.id}</strong><br>Base Fare: ${flight.price_dropdown.base_fare}`;
+    cardInfo.innerHTML = `Flight ID: <strong>${flight.id}</strong><br>Base Fare: ${flight.baseFare}`;
 
     const bookButton = document.createElement('button');
     bookButton.classList.add('btn', 'btn-success', 'book-btn');
