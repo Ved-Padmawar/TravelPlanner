@@ -22,7 +22,6 @@ public class FlightsController {
     public String index() {
         return "list of flights";
     }
-    // @CrossOrigin(origins = "http://localhost:5501")
     @GetMapping("/flights/search")
     public String getSpecificFlightData(
             @RequestParam(value = "fromLoc", required = false) String fromLoc,
