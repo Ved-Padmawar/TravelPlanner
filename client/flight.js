@@ -1,3 +1,5 @@
+
+
 // Get the search button element
 const searchBtn = document.getElementById('searchBtn');
 
@@ -13,34 +15,24 @@ function handleSearch(event) {
   const destination = document.getElementById('destination').value;
   const dateFrom = document.getElementById('dateFrom').value;
 
-  console.log(origin)
+ // Construct the URL with the dynamic inputs
+const apiUrl = `http://localhost:8080/flights/search?fromLoc=${origin}&toLoc=${destination}&date_from=${dateFrom}`;
 
-  // Construct the URL with the dynamic inputs
-  const apiUrl = `https://api.tequila.kiwi.com/v2/search?fly_from=${origin}&fly_to=${destination}&date_from=${dateFrom}&date_to=${dateFrom}&max_stopovers=1&vehicle_type=aircraft&limit=20&curr=INR&sort=price`;
-  const apiKey = "1wU6jIQnCeBsJ12o94xH5xr0IpQ2YU_k";
+  // Note: We are using a relative URL here, assuming the frontend is served from the same domain as the Spring Boot backend.
 
-
-
-  fetch(apiUrl, {
-                          method: 'GET',
-                          headers: {
-                              'Accept': 'application/json',
-                              'apikey': apiKey
-                          }
-                      })
+  fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
       // Process the response data here
       console.log(data);
       // Update the flight fare details in the webpage
-      updateFlightFares(data.data);
+      updateFlightFares(data);
     })
     .catch(error => {
       // Handle any errors that occurred during the request
-      console.log('Erroroojio:', error);
+      console.log('Error:', error);
     });
 }
-
 // Function to update the flight fare details in the webpage
 function updateFlightFares(data) {
   // Clear the existing flight cards
@@ -57,11 +49,11 @@ function updateFlightFares(data) {
 
     const cardTitle = document.createElement('h5');
     cardTitle.classList.add('card-title');
-    cardTitle.textContent = `${flight.cityCodeFrom} to ${flight.cityCodeTo}`;
+    cardTitle.textContent = `${flight.cityFrom} to ${flight.cityTo}`;
 
     const cardInfo = document.createElement('p');
     cardInfo.classList.add('card-info');
-    cardInfo.innerHTML = `Flight ID: <strong>${flight.id}</strong><br>Base Fare: ${flight.price_dropdown.base_fare}`;
+    cardInfo.innerHTML = `Base Fare: ${flight.baseFare}`;
 
     const bookButton = document.createElement('button');
     bookButton.classList.add('btn', 'btn-success', 'book-btn');

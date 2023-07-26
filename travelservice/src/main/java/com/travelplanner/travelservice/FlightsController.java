@@ -1,4 +1,5 @@
 package com.travelplanner.travelservice;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.google.gson.Gson;
 import com.travelplanner.travelservice.models.flightModel;
 import java.io.BufferedReader;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.*;
 
+@CrossOrigin(maxAge = 3600)
 @RestController
 public class FlightsController {
 
@@ -20,7 +22,7 @@ public class FlightsController {
     public String index() {
         return "list of flights";
     }
-
+    // @CrossOrigin(origins = "http://localhost:5501")
     @GetMapping("/flights/search")
     public String getSpecificFlightData(
             @RequestParam(value = "fromLoc", required = false) String fromLoc,
@@ -71,7 +73,8 @@ public class FlightsController {
                     flightModel flight = new flightModel(
                             flightJson.getString("cityFrom"),
                             flightJson.getString("cityTo"),
-                            flightJson.getJSONObject("price_dropdown").getDouble("base_fare"));
+                            flightJson.getJSONObject("price_dropdown").getDouble("base_fare"),
+                            flightJson.getString("id"));
                     flightDataList.add(flight);
                 }
                 Gson gson = new Gson();

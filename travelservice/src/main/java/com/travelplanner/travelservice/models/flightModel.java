@@ -4,11 +4,14 @@ public class flightModel {
     private String cityFrom;
     private String cityTo;
     private double baseFare;
+    private String flightId;
 
-    public flightModel(String cityFrom, String cityTo, double baseFare) {
+    public flightModel(String cityFrom, String cityTo, double baseFare, String flightId) {
         this.cityFrom = cityFrom;
         this.cityTo = cityTo;
         this.baseFare = baseFare;
+        this.flightId = flightId;
+
     }
 
     public String getCityFrom() 
@@ -41,4 +44,13 @@ public class flightModel {
         this.baseFare = baseFare;
     }
 
+     public String getFlightId() 
+    {
+        return flightId;
+    }
+
+    public void setFlightId(String flightId) 
+    {
+        this.flightId = flightId;
+    }
 }
