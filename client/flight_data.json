@@ -12,7 +12,9 @@
                 "fees": 0,
                 "base_fare": 5177
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T03:50:00.000Z",
             "duration": {
@@ -27,7 +29,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T09:20:00.000Z",
-            "airlines": ["AI"],
+            "airlines": [
+                "AI"
+            ],
             "id": "071106c14c8c000095d6d91f_0",
             "flyTo": "HYD",
             "conversion": {
@@ -60,37 +64,41 @@
             },
             "quality": 86.062406,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "S",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "AI",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T03:50:00.000Z",
-                "fare_category": "M",
-                "flight_no": 560,
-                "fare_basis": "SIP",
-                "local_arrival": "2023-08-27T09:20:00.000Z",
-                "id": "071106c14c8c000095d6d91f_0",
-                "airline": "AI",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T07:10:00.000Z",
-                "combination_id": "071106c14c8c000095d6d91f",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "560",
-                "utc_departure": "2023-08-27T01:40:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "S",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "AI",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T03:50:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 560,
+                    "fare_basis": "SIP",
+                    "local_arrival": "2023-08-27T09:20:00.000Z",
+                    "id": "071106c14c8c000095d6d91f_0",
+                    "airline": "AI",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T07:10:00.000Z",
+                    "combination_id": "071106c14c8c000095d6d91f",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "560",
+                    "utc_departure": "2023-08-27T01:40:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T01:40:00.000Z",
             "throw_away_ticketing": false,
@@ -109,7 +117,9 @@
                 "fees": 0,
                 "base_fare": 5177
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T18:15:00.000Z",
             "duration": {
@@ -124,7 +134,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T23:45:00.000Z",
-            "airlines": ["AI"],
+            "airlines": [
+                "AI"
+            ],
             "id": "071106c14c8c000099a506ad_0",
             "flyTo": "HYD",
             "conversion": {
@@ -157,37 +169,41 @@
             },
             "quality": 86.729071,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "S",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "AI",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T18:15:00.000Z",
-                "fare_category": "M",
-                "flight_no": 839,
-                "fare_basis": "SIP",
-                "local_arrival": "2023-08-27T23:45:00.000Z",
-                "id": "071106c14c8c000099a506ad_0",
-                "airline": "AI",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T21:30:00.000Z",
-                "combination_id": "071106c14c8c000099a506ad",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "839",
-                "utc_departure": "2023-08-27T16:00:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "S",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "AI",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T18:15:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 839,
+                    "fare_basis": "SIP",
+                    "local_arrival": "2023-08-27T23:45:00.000Z",
+                    "id": "071106c14c8c000099a506ad_0",
+                    "airline": "AI",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T21:30:00.000Z",
+                    "combination_id": "071106c14c8c000099a506ad",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "839",
+                    "utc_departure": "2023-08-27T16:00:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T16:00:00.000Z",
             "throw_away_ticketing": false,
@@ -206,7 +222,9 @@
                 "fees": 0,
                 "base_fare": 5177
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T07:55:00.000Z",
             "duration": {
@@ -221,7 +239,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T13:25:00.000Z",
-            "airlines": ["AI"],
+            "airlines": [
+                "AI"
+            ],
             "id": "071106c14c8c00001fb47d37_0",
             "flyTo": "HYD",
             "conversion": {
@@ -254,37 +274,41 @@
             },
             "quality": 87.395736,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "S",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "AI",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T07:55:00.000Z",
-                "fare_category": "M",
-                "flight_no": 522,
-                "fare_basis": "SIP",
-                "local_arrival": "2023-08-27T13:25:00.000Z",
-                "id": "071106c14c8c00001fb47d37_0",
-                "airline": "AI",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T11:05:00.000Z",
-                "combination_id": "071106c14c8c00001fb47d37",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "522",
-                "utc_departure": "2023-08-27T05:35:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "S",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "AI",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T07:55:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 522,
+                    "fare_basis": "SIP",
+                    "local_arrival": "2023-08-27T13:25:00.000Z",
+                    "id": "071106c14c8c00001fb47d37_0",
+                    "airline": "AI",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T11:05:00.000Z",
+                    "combination_id": "071106c14c8c00001fb47d37",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "522",
+                    "utc_departure": "2023-08-27T05:35:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T05:35:00.000Z",
             "throw_away_ticketing": false,
@@ -303,7 +327,9 @@
                 "fees": 0,
                 "base_fare": 5177
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T06:30:00.000Z",
             "duration": {
@@ -318,7 +344,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T12:00:00.000Z",
-            "airlines": ["AI"],
+            "airlines": [
+                "AI"
+            ],
             "id": "071106c14c8c000049eedab1_0",
             "flyTo": "HYD",
             "conversion": {
@@ -351,37 +379,41 @@
             },
             "quality": 88.729066,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "S",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "AI",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T06:30:00.000Z",
-                "fare_category": "M",
-                "flight_no": 542,
-                "fare_basis": "SIP",
-                "local_arrival": "2023-08-27T12:00:00.000Z",
-                "id": "071106c14c8c000049eedab1_0",
-                "airline": "AI",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T09:30:00.000Z",
-                "combination_id": "071106c14c8c000049eedab1",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "542",
-                "utc_departure": "2023-08-27T04:00:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "S",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "AI",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T06:30:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 542,
+                    "fare_basis": "SIP",
+                    "local_arrival": "2023-08-27T12:00:00.000Z",
+                    "id": "071106c14c8c000049eedab1_0",
+                    "airline": "AI",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T09:30:00.000Z",
+                    "combination_id": "071106c14c8c000049eedab1",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "542",
+                    "utc_departure": "2023-08-27T04:00:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T04:00:00.000Z",
             "throw_away_ticketing": false,
@@ -400,7 +432,9 @@
                 "fees": 0,
                 "base_fare": 5461
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T03:10:00.000Z",
             "duration": {
@@ -415,7 +449,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T08:40:00.000Z",
-            "airlines": ["6E"],
+            "airlines": [
+                "6E"
+            ],
             "id": "071106c14c8c0000e12cc48d_0",
             "flyTo": "HYD",
             "conversion": {
@@ -444,37 +480,41 @@
             },
             "quality": 89.174455,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "B",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "6E",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T03:10:00.000Z",
-                "fare_category": "M",
-                "flight_no": 6203,
-                "fare_basis": "",
-                "local_arrival": "2023-08-27T08:40:00.000Z",
-                "id": "071106c14c8c0000e12cc48d_0",
-                "airline": "6E",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T06:30:00.000Z",
-                "combination_id": "071106c14c8c0000e12cc48d",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "6203",
-                "utc_departure": "2023-08-27T01:00:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "B",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "6E",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T03:10:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 6203,
+                    "fare_basis": "",
+                    "local_arrival": "2023-08-27T08:40:00.000Z",
+                    "id": "071106c14c8c0000e12cc48d_0",
+                    "airline": "6E",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T06:30:00.000Z",
+                    "combination_id": "071106c14c8c0000e12cc48d",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "6203",
+                    "utc_departure": "2023-08-27T01:00:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T01:00:00.000Z",
             "throw_away_ticketing": false,
@@ -493,7 +533,9 @@
                 "fees": 0,
                 "base_fare": 5461
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T13:55:00.000Z",
             "duration": {
@@ -508,7 +550,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T19:25:00.000Z",
-            "airlines": ["6E"],
+            "airlines": [
+                "6E"
+            ],
             "id": "071106c14c8c00009c470083_0",
             "flyTo": "HYD",
             "conversion": {
@@ -537,37 +581,41 @@
             },
             "quality": 89.174455,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "B",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "6E",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T13:55:00.000Z",
-                "fare_category": "M",
-                "flight_no": 5312,
-                "fare_basis": "",
-                "local_arrival": "2023-08-27T19:25:00.000Z",
-                "id": "071106c14c8c00009c470083_0",
-                "airline": "6E",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T17:15:00.000Z",
-                "combination_id": "071106c14c8c00009c470083",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "5312",
-                "utc_departure": "2023-08-27T11:45:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "B",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "6E",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T13:55:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 5312,
+                    "fare_basis": "",
+                    "local_arrival": "2023-08-27T19:25:00.000Z",
+                    "id": "071106c14c8c00009c470083_0",
+                    "airline": "6E",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T17:15:00.000Z",
+                    "combination_id": "071106c14c8c00009c470083",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "5312",
+                    "utc_departure": "2023-08-27T11:45:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T11:45:00.000Z",
             "throw_away_ticketing": false,
@@ -586,7 +634,9 @@
                 "fees": 0,
                 "base_fare": 5461
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-26T22:40:00.000Z",
             "duration": {
@@ -601,7 +651,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T04:10:00.000Z",
-            "airlines": ["6E"],
+            "airlines": [
+                "6E"
+            ],
             "id": "071106c14c8c0000d297e9c2_0",
             "flyTo": "HYD",
             "conversion": {
@@ -630,37 +682,41 @@
             },
             "quality": 89.84112,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "B",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "6E",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-26T22:40:00.000Z",
-                "fare_category": "M",
-                "flight_no": 2461,
-                "fare_basis": "",
-                "local_arrival": "2023-08-27T04:10:00.000Z",
-                "id": "071106c14c8c0000d297e9c2_0",
-                "airline": "6E",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T01:55:00.000Z",
-                "combination_id": "071106c14c8c0000d297e9c2",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "2461",
-                "utc_departure": "2023-08-26T20:25:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "B",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "6E",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-26T22:40:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 2461,
+                    "fare_basis": "",
+                    "local_arrival": "2023-08-27T04:10:00.000Z",
+                    "id": "071106c14c8c0000d297e9c2_0",
+                    "airline": "6E",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T01:55:00.000Z",
+                    "combination_id": "071106c14c8c0000d297e9c2",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "2461",
+                    "utc_departure": "2023-08-26T20:25:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-26T20:25:00.000Z",
             "throw_away_ticketing": false,
@@ -679,7 +735,9 @@
                 "fees": 0,
                 "base_fare": 5558
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T02:25:00.000Z",
             "duration": {
@@ -694,7 +752,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T07:55:00.000Z",
-            "airlines": ["6E"],
+            "airlines": [
+                "6E"
+            ],
             "id": "071106c14c8c000043ccae37_0",
             "flyTo": "HYD",
             "conversion": {
@@ -723,37 +783,41 @@
             },
             "quality": 90.904038,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "6E",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T02:25:00.000Z",
-                "fare_category": "M",
-                "flight_no": 2337,
-                "fare_basis": "",
-                "local_arrival": "2023-08-27T07:55:00.000Z",
-                "id": "071106c14c8c000043ccae37_0",
-                "airline": "6E",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T05:40:00.000Z",
-                "combination_id": "071106c14c8c000043ccae37",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "2337",
-                "utc_departure": "2023-08-27T00:10:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "6E",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T02:25:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 2337,
+                    "fare_basis": "",
+                    "local_arrival": "2023-08-27T07:55:00.000Z",
+                    "id": "071106c14c8c000043ccae37_0",
+                    "airline": "6E",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T05:40:00.000Z",
+                    "combination_id": "071106c14c8c000043ccae37",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "2337",
+                    "utc_departure": "2023-08-27T00:10:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T00:10:00.000Z",
             "throw_away_ticketing": false,
@@ -772,7 +836,9 @@
                 "fees": 0,
                 "base_fare": 5587
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T19:30:00.000Z",
             "duration": {
@@ -787,7 +853,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-28T01:00:00.000Z",
-            "airlines": ["SG"],
+            "airlines": [
+                "SG"
+            ],
             "id": "071106c14c8c0000e4e36531_0",
             "flyTo": "HYD",
             "conversion": {
@@ -816,37 +884,41 @@
             },
             "quality": 89.221822,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "U",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "SG",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T19:30:00.000Z",
-                "fare_category": "M",
-                "flight_no": 8164,
-                "fare_basis": "USAV",
-                "local_arrival": "2023-08-28T01:00:00.000Z",
-                "id": "071106c14c8c0000e4e36531_0",
-                "airline": "SG",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T23:00:00.000Z",
-                "combination_id": "071106c14c8c0000e4e36531",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "8164",
-                "utc_departure": "2023-08-27T17:30:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "U",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "SG",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T19:30:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 8164,
+                    "fare_basis": "USAV",
+                    "local_arrival": "2023-08-28T01:00:00.000Z",
+                    "id": "071106c14c8c0000e4e36531_0",
+                    "airline": "SG",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T23:00:00.000Z",
+                    "combination_id": "071106c14c8c0000e4e36531",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "8164",
+                    "utc_departure": "2023-08-27T17:30:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T17:30:00.000Z",
             "throw_away_ticketing": false,
@@ -865,7 +937,9 @@
                 "fees": 0,
                 "base_fare": 5674
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T11:50:00.000Z",
             "duration": {
@@ -880,7 +954,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T17:20:00.000Z",
-            "airlines": ["6E"],
+            "airlines": [
+                "6E"
+            ],
             "id": "071106c14c8c0000a3bca392_0",
             "flyTo": "HYD",
             "conversion": {
@@ -909,37 +985,41 @@
             },
             "quality": 92.175156,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "B",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "6E",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T11:50:00.000Z",
-                "fare_category": "M",
-                "flight_no": 2187,
-                "fare_basis": "",
-                "local_arrival": "2023-08-27T17:20:00.000Z",
-                "id": "071106c14c8c0000a3bca392_0",
-                "airline": "6E",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T15:05:00.000Z",
-                "combination_id": "071106c14c8c0000a3bca392",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "2187",
-                "utc_departure": "2023-08-27T09:35:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "B",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "6E",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T11:50:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 2187,
+                    "fare_basis": "",
+                    "local_arrival": "2023-08-27T17:20:00.000Z",
+                    "id": "071106c14c8c0000a3bca392_0",
+                    "airline": "6E",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T15:05:00.000Z",
+                    "combination_id": "071106c14c8c0000a3bca392",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "2187",
+                    "utc_departure": "2023-08-27T09:35:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T09:35:00.000Z",
             "throw_away_ticketing": false,
@@ -958,7 +1038,9 @@
                 "fees": 0,
                 "base_fare": 5674
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T16:30:00.000Z",
             "duration": {
@@ -973,7 +1055,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T22:00:00.000Z",
-            "airlines": ["6E"],
+            "airlines": [
+                "6E"
+            ],
             "id": "071106c14c8c00006f6a7353_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1002,37 +1086,41 @@
             },
             "quality": 92.175156,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "B",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "6E",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T16:30:00.000Z",
-                "fare_category": "M",
-                "flight_no": 605,
-                "fare_basis": "",
-                "local_arrival": "2023-08-27T22:00:00.000Z",
-                "id": "071106c14c8c00006f6a7353_0",
-                "airline": "6E",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T19:45:00.000Z",
-                "combination_id": "071106c14c8c00006f6a7353",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "605",
-                "utc_departure": "2023-08-27T14:15:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "B",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "6E",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T16:30:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 605,
+                    "fare_basis": "",
+                    "local_arrival": "2023-08-27T22:00:00.000Z",
+                    "id": "071106c14c8c00006f6a7353_0",
+                    "airline": "6E",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T19:45:00.000Z",
+                    "combination_id": "071106c14c8c00006f6a7353",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "605",
+                    "utc_departure": "2023-08-27T14:15:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T14:15:00.000Z",
             "throw_away_ticketing": false,
@@ -1051,7 +1139,9 @@
                 "fees": 0,
                 "base_fare": 5720
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T13:40:00.000Z",
             "duration": {
@@ -1066,7 +1156,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T19:10:00.000Z",
-            "airlines": ["AI"],
+            "airlines": [
+                "AI"
+            ],
             "id": "071106c14c8c0000a08d7f84_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1099,37 +1191,41 @@
             },
             "quality": 92.012556,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "T",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "AI",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T13:40:00.000Z",
-                "fare_category": "M",
-                "flight_no": 544,
-                "fare_basis": "TIP",
-                "local_arrival": "2023-08-27T19:10:00.000Z",
-                "id": "071106c14c8c0000a08d7f84_0",
-                "airline": "AI",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T17:00:00.000Z",
-                "combination_id": "071106c14c8c0000a08d7f84",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "544",
-                "utc_departure": "2023-08-27T11:30:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "T",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "AI",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T13:40:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 544,
+                    "fare_basis": "TIP",
+                    "local_arrival": "2023-08-27T19:10:00.000Z",
+                    "id": "071106c14c8c0000a08d7f84_0",
+                    "airline": "AI",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T17:00:00.000Z",
+                    "combination_id": "071106c14c8c0000a08d7f84",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "544",
+                    "utc_departure": "2023-08-27T11:30:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T11:30:00.000Z",
             "throw_away_ticketing": false,
@@ -1148,7 +1244,9 @@
                 "fees": 0,
                 "base_fare": 5898
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T15:30:00.000Z",
             "duration": {
@@ -1163,7 +1261,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T21:00:00.000Z",
-            "airlines": ["6E"],
+            "airlines": [
+                "6E"
+            ],
             "id": "071106c14c8c0000e5ee9dc5_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1192,37 +1292,41 @@
             },
             "quality": 93.963065,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "B",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "6E",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T15:30:00.000Z",
-                "fare_category": "M",
-                "flight_no": 2341,
-                "fare_basis": "",
-                "local_arrival": "2023-08-27T21:00:00.000Z",
-                "id": "071106c14c8c0000e5ee9dc5_0",
-                "airline": "6E",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T18:50:00.000Z",
-                "combination_id": "071106c14c8c0000e5ee9dc5",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "2341",
-                "utc_departure": "2023-08-27T13:20:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "B",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "6E",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T15:30:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 2341,
+                    "fare_basis": "",
+                    "local_arrival": "2023-08-27T21:00:00.000Z",
+                    "id": "071106c14c8c0000e5ee9dc5_0",
+                    "airline": "6E",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T18:50:00.000Z",
+                    "combination_id": "071106c14c8c0000e5ee9dc5",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "2341",
+                    "utc_departure": "2023-08-27T13:20:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T13:20:00.000Z",
             "throw_away_ticketing": false,
@@ -1241,7 +1345,9 @@
                 "fees": -273.77,
                 "base_fare": 6269.77
             },
-            "availability": {"seats": 9},
+            "availability": {
+                "seats": 9
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T17:25:00.000Z",
             "duration": {
@@ -1256,7 +1362,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T22:55:00.000Z",
-            "airlines": ["UK"],
+            "airlines": [
+                "UK"
+            ],
             "id": "071106c14c8c0000e8508db2_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1289,37 +1397,41 @@
             },
             "quality": 96.370271,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "V",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "UK",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T17:25:00.000Z",
-                "fare_category": "M",
-                "flight_no": 871,
-                "fare_basis": "V0RPRYS",
-                "local_arrival": "2023-08-27T22:55:00.000Z",
-                "id": "071106c14c8c0000e8508db2_0",
-                "airline": "UK",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T20:35:00.000Z",
-                "combination_id": "071106c14c8c0000e8508db2",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "871",
-                "utc_departure": "2023-08-27T15:05:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "V",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "UK",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T17:25:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 871,
+                    "fare_basis": "V0RPRYS",
+                    "local_arrival": "2023-08-27T22:55:00.000Z",
+                    "id": "071106c14c8c0000e8508db2_0",
+                    "airline": "UK",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T20:35:00.000Z",
+                    "combination_id": "071106c14c8c0000e8508db2",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "871",
+                    "utc_departure": "2023-08-27T15:05:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T15:05:00.000Z",
             "throw_away_ticketing": false,
@@ -1338,7 +1450,9 @@
                 "fees": -273.77,
                 "base_fare": 6388.77
             },
-            "availability": {"seats": 9},
+            "availability": {
+                "seats": 9
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T04:00:00.000Z",
             "duration": {
@@ -1353,7 +1467,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T09:30:00.000Z",
-            "airlines": ["UK"],
+            "airlines": [
+                "UK"
+            ],
             "id": "071106c14c8c00009bfcf1c5_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1386,37 +1502,41 @@
             },
             "quality": 96.340933,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "V",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "UK",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T04:00:00.000Z",
-                "fare_category": "M",
-                "flight_no": 829,
-                "fare_basis": "V0RPRYS",
-                "local_arrival": "2023-08-27T09:30:00.000Z",
-                "id": "071106c14c8c00009bfcf1c5_0",
-                "airline": "UK",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T07:20:00.000Z",
-                "combination_id": "071106c14c8c00009bfcf1c5",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "829",
-                "utc_departure": "2023-08-27T01:50:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "V",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "UK",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T04:00:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 829,
+                    "fare_basis": "V0RPRYS",
+                    "local_arrival": "2023-08-27T09:30:00.000Z",
+                    "id": "071106c14c8c00009bfcf1c5_0",
+                    "airline": "UK",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T07:20:00.000Z",
+                    "combination_id": "071106c14c8c00009bfcf1c5",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "829",
+                    "utc_departure": "2023-08-27T01:50:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T01:50:00.000Z",
             "throw_away_ticketing": false,
@@ -1435,7 +1555,9 @@
                 "fees": -273.77,
                 "base_fare": 6388.77
             },
-            "availability": {"seats": 9},
+            "availability": {
+                "seats": 9
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T07:05:00.000Z",
             "duration": {
@@ -1450,7 +1572,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T12:35:00.000Z",
-            "airlines": ["UK"],
+            "airlines": [
+                "UK"
+            ],
             "id": "071106c14c8c0000d4bd6702_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1483,37 +1607,41 @@
             },
             "quality": 96.340933,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "V",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "UK",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T07:05:00.000Z",
-                "fare_category": "M",
-                "flight_no": 859,
-                "fare_basis": "V0RPRYS",
-                "local_arrival": "2023-08-27T12:35:00.000Z",
-                "id": "071106c14c8c0000d4bd6702_0",
-                "airline": "UK",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T10:25:00.000Z",
-                "combination_id": "071106c14c8c0000d4bd6702",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "859",
-                "utc_departure": "2023-08-27T04:55:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "V",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "UK",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T07:05:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 859,
+                    "fare_basis": "V0RPRYS",
+                    "local_arrival": "2023-08-27T12:35:00.000Z",
+                    "id": "071106c14c8c0000d4bd6702_0",
+                    "airline": "UK",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T10:25:00.000Z",
+                    "combination_id": "071106c14c8c0000d4bd6702",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "859",
+                    "utc_departure": "2023-08-27T04:55:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T04:55:00.000Z",
             "throw_away_ticketing": false,
@@ -1532,7 +1660,9 @@
                 "fees": -273.77,
                 "base_fare": 6388.77
             },
-            "availability": {"seats": 9},
+            "availability": {
+                "seats": 9
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T11:30:00.000Z",
             "duration": {
@@ -1547,7 +1677,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T17:00:00.000Z",
-            "airlines": ["UK"],
+            "airlines": [
+                "UK"
+            ],
             "id": "071106c14c8c00007808280e_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1580,37 +1712,41 @@
             },
             "quality": 97.007598,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "V",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "UK",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T11:30:00.000Z",
-                "fare_category": "M",
-                "flight_no": 899,
-                "fare_basis": "V0RPRYS",
-                "local_arrival": "2023-08-27T17:00:00.000Z",
-                "id": "071106c14c8c00007808280e_0",
-                "airline": "UK",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T14:45:00.000Z",
-                "combination_id": "071106c14c8c00007808280e",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "899",
-                "utc_departure": "2023-08-27T09:15:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "V",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "UK",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T11:30:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 899,
+                    "fare_basis": "V0RPRYS",
+                    "local_arrival": "2023-08-27T17:00:00.000Z",
+                    "id": "071106c14c8c00007808280e_0",
+                    "airline": "UK",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T14:45:00.000Z",
+                    "combination_id": "071106c14c8c00007808280e",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "899",
+                    "utc_departure": "2023-08-27T09:15:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T09:15:00.000Z",
             "throw_away_ticketing": false,
@@ -1629,7 +1765,9 @@
                 "fees": -273.77,
                 "base_fare": 6388.77
             },
-            "availability": {"seats": 9},
+            "availability": {
+                "seats": 9
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T14:20:00.000Z",
             "duration": {
@@ -1644,7 +1782,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T19:50:00.000Z",
-            "airlines": ["UK"],
+            "airlines": [
+                "UK"
+            ],
             "id": "071106c14c8c0000e68b0580_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1677,37 +1817,41 @@
             },
             "quality": 97.007598,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "V",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "UK",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T14:20:00.000Z",
-                "fare_category": "M",
-                "flight_no": 879,
-                "fare_basis": "V0RPRYS",
-                "local_arrival": "2023-08-27T19:50:00.000Z",
-                "id": "071106c14c8c0000e68b0580_0",
-                "airline": "UK",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T17:35:00.000Z",
-                "combination_id": "071106c14c8c0000e68b0580",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "879",
-                "utc_departure": "2023-08-27T12:05:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "V",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "UK",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T14:20:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 879,
+                    "fare_basis": "V0RPRYS",
+                    "local_arrival": "2023-08-27T19:50:00.000Z",
+                    "id": "071106c14c8c0000e68b0580_0",
+                    "airline": "UK",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T17:35:00.000Z",
+                    "combination_id": "071106c14c8c0000e68b0580",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "879",
+                    "utc_departure": "2023-08-27T12:05:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T12:05:00.000Z",
             "throw_away_ticketing": false,
@@ -1726,7 +1870,9 @@
                 "fees": 0,
                 "base_fare": 6217
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T06:45:00.000Z",
             "duration": {
@@ -1741,7 +1887,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T12:15:00.000Z",
-            "airlines": ["6E"],
+            "airlines": [
+                "6E"
+            ],
             "id": "071106c14c8c000084a92281_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1770,37 +1918,41 @@
             },
             "quality": 96.791976,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "B",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "6E",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T06:45:00.000Z",
-                "fare_category": "M",
-                "flight_no": 2005,
-                "fare_basis": "",
-                "local_arrival": "2023-08-27T12:15:00.000Z",
-                "id": "071106c14c8c000084a92281_0",
-                "airline": "6E",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T10:10:00.000Z",
-                "combination_id": "071106c14c8c000084a92281",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "2005",
-                "utc_departure": "2023-08-27T04:40:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "B",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "6E",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T06:45:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 2005,
+                    "fare_basis": "",
+                    "local_arrival": "2023-08-27T12:15:00.000Z",
+                    "id": "071106c14c8c000084a92281_0",
+                    "airline": "6E",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T10:10:00.000Z",
+                    "combination_id": "071106c14c8c000084a92281",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "2005",
+                    "utc_departure": "2023-08-27T04:40:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T04:40:00.000Z",
             "throw_away_ticketing": false,
@@ -1819,7 +1971,9 @@
                 "fees": 0,
                 "base_fare": 6217
             },
-            "availability": {"seats": null},
+            "availability": {
+                "seats": null
+            },
             "has_airport_change": false,
             "utc_arrival": "2023-08-27T04:50:00.000Z",
             "duration": {
@@ -1834,7 +1988,9 @@
                 "name": "India"
             },
             "local_arrival": "2023-08-27T10:20:00.000Z",
-            "airlines": ["6E"],
+            "airlines": [
+                "6E"
+            ],
             "id": "071106c14c8c000056eebf35_0",
             "flyTo": "HYD",
             "conversion": {
@@ -1863,37 +2019,41 @@
             },
             "quality": 97.458641,
             "facilitated_booking_available": true,
-            "route": [{
-                "fare_classes": "B",
-                "bags_recheck_required": false,
-                "guarantee": false,
-                "cityFrom": "New Delhi",
-                "operating_carrier": "6E",
-                "vi_connection": false,
-                "utc_arrival": "2023-08-27T04:50:00.000Z",
-                "fare_category": "M",
-                "flight_no": 774,
-                "fare_basis": "",
-                "local_arrival": "2023-08-27T10:20:00.000Z",
-                "id": "071106c14c8c000056eebf35_0",
-                "airline": "6E",
-                "flyTo": "HYD",
-                "fare_family": "",
-                "cityCodeTo": "HYD",
-                "local_departure": "2023-08-27T08:10:00.000Z",
-                "combination_id": "071106c14c8c000056eebf35",
-                "equipment": null,
-                "vehicle_type": "aircraft",
-                "cityTo": "Hyderabad",
-                "flyFrom": "DEL",
-                "cityCodeFrom": "DEL",
-                "operating_flight_no": "774",
-                "utc_departure": "2023-08-27T02:40:00.000Z",
-                "return": 0
-            }],
+            "route": [
+                {
+                    "fare_classes": "B",
+                    "bags_recheck_required": false,
+                    "guarantee": false,
+                    "cityFrom": "New Delhi",
+                    "operating_carrier": "6E",
+                    "vi_connection": false,
+                    "utc_arrival": "2023-08-27T04:50:00.000Z",
+                    "fare_category": "M",
+                    "flight_no": 774,
+                    "fare_basis": "",
+                    "local_arrival": "2023-08-27T10:20:00.000Z",
+                    "id": "071106c14c8c000056eebf35_0",
+                    "airline": "6E",
+                    "flyTo": "HYD",
+                    "fare_family": "",
+                    "cityCodeTo": "HYD",
+                    "local_departure": "2023-08-27T08:10:00.000Z",
+                    "combination_id": "071106c14c8c000056eebf35",
+                    "equipment": null,
+                    "vehicle_type": "aircraft",
+                    "cityTo": "Hyderabad",
+                    "flyFrom": "DEL",
+                    "cityCodeFrom": "DEL",
+                    "operating_flight_no": "774",
+                    "utc_departure": "2023-08-27T02:40:00.000Z",
+                    "return": 0
+                }
+            ],
             "cityCodeFrom": "DEL",
             "technical_stops": 0,
-            "bags_price": {"1": 0},
+            "bags_price": {
+                "1": 0
+            },
             "virtual_interlining": false,
             "utc_departure": "2023-08-27T02:40:00.000Z",
             "throw_away_ticketing": false,
