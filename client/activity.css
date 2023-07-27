@@ -1,15 +1,67 @@
-/* activity.css */
-
-body {
+/* Common Styles */
+.body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
+.nik{
+    display: flex;
+    width: 42%;
+    justify-content: center;
+}
 
-header {
-  background-color: #333;
+.search-bar {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a max-width to limit the content width */
+}
+
+
+.search-btn {
+  background-color: #007bff;
   color: #fff;
-  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+
+.search-btn:hover {
+    background-color:#0056b3; /* Changed color */
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.navbar {
+  background: linear-gradient(to right, #007bff, #333);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-brand {
@@ -23,6 +75,8 @@ header {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex; /* Add flexbox */
+  flex-direction: row; /* Add flex-direction */
 }
 
 .nav-item {
@@ -32,57 +86,32 @@ header {
 
 .nav-link {
   color: #fff;
-  text-decoration: none;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
-.activity-search-results {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
-.activity-card {
-  background-color: #f4f4f4;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
-  margin: 0;
-}
-
-.card-info {
-  margin-top: 10px;
-  color: #777;
-}
-
-.book-btn {
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.book-btn:hover {
-  background-color: #218838;
-}
+/* Specific Styles for Activity Page */
 
 footer {
-  background-color: #f8f8f8;
-  color: #777;
-  padding: 20px;
+  background: linear-gradient(to right, #007bff, #333);
+  color: #fff;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  padding: 20px 0;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar-nav.nav-link {
+    display: none;
+  }
+
+  .activity-search-results .activity-card {
+    width: 100%;
+  }
 }

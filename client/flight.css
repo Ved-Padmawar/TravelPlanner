@@ -1,166 +1,125 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Travel Planner - Flight Booking</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    /* Flight Booking Page */
-    .flight-search-bar {
-      margin-bottom: 30px;
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+
+.navbar {
+  background: linear-gradient(to right, #007bff, #333); /* Added gradient */
+  display: flex; /* Added flexbox */
+  align-items: center; /* Added flexbox */
+  justify-content: space-between; /* Added flexbox */
+}
+
+.navbar-nav.nav-link {
+  color: #fff;
+}
+
+/* Main Styles */
+
+.flight-search-bar {
+  margin-top: 30px;
+}
+
+.flight-search-bar .form-group {
+  margin-bottom: 10px;
+}
+
+/* Styling Input Textboxes */
+.form-control {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.3);
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+
+.search-btn:hover {
+    background-color:#0056b3; /* Changed color */
+}
+
+/* Flight Card Styles */
+.flight-card {
+    background-color:#f5f5f5;
+    border-radius:8px;
+    margin-bottom:20px;
+    padding:20px;
+    box-shadow:0px2px4px rgba(0,0,0,0.1);
+    transition:transform .3s ease-in-out; /* Added transition */
+}
+
+.flight-card:hover {
+    transform : scale(1.05); /* Added transform */
+}
+
+.card-title {
+    font-size :20px;
+    margin-bottom :10px;
+}
+
+.card-info {
+    color :#666;
+}
+
+.book-btn {
+    background-color:#28a745;
+    border-color:#28a745;
+    margin-top :10px;
+}
+
+.book-btn:hover {
+    background-color:#218838; /* Changed color */
+    border-color:#1e7e34; /* Changed color */
+}
+
+/* Footer Styles */
+
+footer {
+    background : linear-gradient(to right,#007bff,#333); /* Added gradient */
+    color :#fff;
+    padding :20px0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align : center;
+    display : flex; /* Added flexbox */
+    align-items : center; /* Added flexbox */
+    justify-content : center; /* Added flexbox */
+}
+
+/* Media Queries */
+
+@media (max-width :768px) { /* Added media query */
+    .navbar-nav.nav-link { 
+        display : none; /* Hide nav links on small screens */
     }
-
-    .flight-search-bar .form-group {
-      margin-bottom: 10px;
+    
+    .flight-search-bar .form-group { 
+        width :100%; /* Make input boxes full width on small screens */
+        display : block; /* Make input boxes stack vertically on small screens */
     }
-
-    .flight-search-bar .form-group:last-child {
-      margin-bottom: 0;
-    }
-
-    .flight-search-bar .form-control {
-      height: 40px;
-    }
-
-    .flight-search-bar .search-btn {
-      height: 40px;
-      font-weight: 600;
-      text-transform: uppercase;
-      background-color: #007bff;
-      border-color: #007bff;
-      color: #fff;
-      margin-top: 9px;
-    }
-
-    .flight-search-bar .search-btn:hover {
-      background-color: #0056b3;
-      border-color: #0056b3;
-    }
-
-    .flight-search-results {
-      margin-bottom: 30px;
-    }
-
-    .flight-search-results .flight-card {
-      border: none;
-      border-radius: 10px;
-      background-color: #fff;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .flight-search-results .flight-card .card-body {
-      border:1px solid black;
-      padding: 20px;
-    }
-
-    .flight-search-results .flight-card .card-title {
-      font-size: 20px;
-      font-weight: 600;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .flight-search-results .flight-card .card-info {
-      font-size: 14px;
-      color: #666;
-    }
-
-    .flight-search-results .flight-card .book-btn {
-      background-color: #28a745;
-      border-color: #28a745;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-
-    .flight-search-results .flight-card .book-btn:hover {
-      background-color: #218838;
-      border-color: #218838;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">TripHive</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Recommendations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hotel.html">Hotel Booking</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="activity.html">Activity Booking</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="container">
-    <div class="flight-search-bar">
-      <form>
-        <div class="row align-items-end">
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="origin">Origin</label>
-              <input type="text" id="origin" class="form-control" placeholder="Enter your location">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label for="destination">Destination</label>
-              <input type="text" id="destination" class="form-control" placeholder="Enter your destination">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <button type="submit" class="btn btn-primary search-btn">Search</button>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <div class="flight-search-results">
-      <div class="flight-card">
-        <div class="card-body">
-          <h5 class="card-title">Flight Option 1</h5>
-          <p class="card-info">Details of Flight Option 1</p>
-          <button class="btn btn-success book-btn">Book</button>
-        </div>
-      </div>
-
-      <div class="flight-card">
-        <div class="card-body">
-          <h5 class="card-title">Flight Option 2</h5>
-          <p class="card-info">Details of Flight Option 2</p>
-          <button class="btn btn-success book-btn">Book</button>
-        </div>
-      </div>
-
-      <div class="flight-card">
-        <div class="card-body">
-          <h5 class="card-title">Flight Option 3</h5>
-          <p class="card-info">Details of Flight Option 3</p>
-          <button class="btn btn-success book-btn">Book</button>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 TripHive. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-</html>
+    
+}
