@@ -13,8 +13,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 @CrossOrigin(maxAge = 3600)
 @RestController
@@ -27,7 +26,6 @@ public class ActivitiesController {
 
     @GetMapping("/{stateName}")
     public String getActivitiesForState(@PathVariable String stateName) {
-        List<JSONObject> activitiesList = new ArrayList<>();
 
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             JSONArray activitiesJson = getActivitiesJsonForState(connection, stateName);
