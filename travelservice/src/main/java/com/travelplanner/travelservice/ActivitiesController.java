@@ -30,7 +30,7 @@ public class ActivitiesController {
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             JSONArray activitiesJson = getActivitiesJsonForState(connection, stateName);
 
-            return activitiesJson.toString(); // No need for indentation in the JSON response
+            return activitiesJson.toString(); 
         } catch (SQLException e) {
             e.printStackTrace();
         }
