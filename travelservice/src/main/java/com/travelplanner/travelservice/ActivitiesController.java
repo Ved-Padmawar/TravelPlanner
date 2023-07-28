@@ -1,43 +1,46 @@
 package com.travelplanner.travelservice;
 
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-import java.util.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
-public class ActivitiesController 
-{
+@CrossOrigin(maxAge = 3600)
+@RestController
+@RequestMapping("/api/activities")
+public class ActivitiesController {
 
-    public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/india_activities";
-        String username = "root";
-        String password = "root";
-        Scanner sc = new Scanner(System.in);
+    private final String url = "jdbc:mysql://localhost:3306/india_activities";
+    private final String username = "root";
+    private final String password = "root";
+
+    @GetMapping("/{stateName}")
+    public String getActivitiesForState(@PathVariable String stateName) {
+        List<JSONObject> activitiesList = new ArrayList<>();
 
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
-            // Take the state name input
-            System.out.println("Enter State name:");
-            String stateName = sc.nextLine();
-             // Replace this with your input method
+            JSONArray activitiesJson = getActivitiesJsonForState(connection, stateName);
 
-            // Query the database for activities of the given state
-            JSONArray activitiesJson = getActivitiesForState(connection, stateName);
-
-            // Print the JSON representation of activities
-            System.out.println(activitiesJson.toString(4)); // Output with indentation
-
+            return activitiesJson.toString(); // No need for indentation in the JSON response
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        sc.close();
+
+        return "Error";
     }
 
-    private static JSONArray getActivitiesForState(Connection connection, String stateName) throws SQLException {
+    private JSONArray getActivitiesJsonForState(Connection connection, String stateName) throws SQLException {
         String query = "SELECT activity_id, activity_header, activity_text, image_url FROM activities WHERE state_name = ?";
         JSONArray activitiesJson = new JSONArray();
 
@@ -46,19 +49,15 @@ public class ActivitiesController
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                // int activityId = resultSet.getInt("activity_id");
                 String activityHeader = resultSet.getString("activity_header");
                 String activityText = resultSet.getString("activity_text");
                 String imageURL = resultSet.getString("image_url");
 
-                // Create JSON object for each activity
                 JSONObject activityJson = new JSONObject();
-                // activityJson.put("activity_id", activityId);
                 activityJson.put("activity_header", activityHeader);
                 activityJson.put("activity_text", activityText);
                 activityJson.put("image_url", imageURL);
 
-                // Add activity JSON object to the array
                 activitiesJson.put(activityJson);
             }
         }

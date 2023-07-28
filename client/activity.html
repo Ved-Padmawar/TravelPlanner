@@ -23,9 +23,9 @@
         </ul>
     </div>
 </header>
-<div class = "nik">
+<div class="nik">
     <div class="search-bar">
-        <form>
+        <form id="searchForm"> <!-- Add an ID to the form -->
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Enter your Destination" aria-label="Origin" id="origin">
                 <div class="input-group-append align-items-start">
@@ -36,9 +36,7 @@
     </div>
 </div>
 
-<main class="container">
-
-
+<main class="container" id="activitiesContainer"> <!-- Add ID to the main container -->
     <hr>
 
     <div class="card">
@@ -105,6 +103,8 @@
       serviceBaseUrl: "https://api.writesonic.com",
       token: "04f60d27-6f44-449c-b4e2-30432bcd9dab",
     });
-  </script>
+</script>
+<script src="activity.js"></script>
 </body>
 </html>
+    
