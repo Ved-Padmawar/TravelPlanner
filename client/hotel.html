@@ -89,6 +89,16 @@
 <script src="hotel.js"></script>
 
 <script>
+    // Attach the handleSearch function to the search button click event
+    const searchBtn = document.getElementById('searchBtn');
+    searchBtn.addEventListener('click', handleSearch);
+
+    // Optional: Attach the handleSearch function to the form submission event
+    const searchForm = document.querySelector('form');
+    searchForm.addEventListener('submit', handleSearch);
+</script>
+
+<script>
     (function (w, d, s, o, f, js, fjs) {
       w["botsonic_widget"] = o;
       w[o] =
@@ -107,16 +117,6 @@
       token: "04f60d27-6f44-449c-b4e2-30432bcd9dab",
     });
   </script>
-
-<script>
-    // Attach the handleSearch function to the search button click event
-    const searchBtn = document.getElementById('searchBtn');
-    searchBtn.addEventListener('click', handleSearch);
-
-    // Optional: Attach the handleSearch function to the form submission event
-    const searchForm = document.querySelector('form');
-    searchForm.addEventListener('submit', handleSearch);
-</script>
 
 </body>
 </html>
