@@ -3,76 +3,66 @@ package com.travelplanner.travelservice;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
+import java.util.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class ActivitiesController {
+public class ActivitiesController 
+{
 
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/india_activities";
         String username = "root";
         String password = "root";
+        Scanner sc = new Scanner(System.in);
 
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
-            // Export states data to JSON
-            JSONArray statesJsonArray = exportStatesToJson(connection);
+            // Take the state name input
+            System.out.println("Enter State name:");
+            String stateName = sc.nextLine();
+             // Replace this with your input method
 
-            // Export recommendations data to JSON
-            JSONArray recommendationsJsonArray = exportRecommendationsToJson(connection);
+            // Query the database for activities of the given state
+            JSONArray activitiesJson = getActivitiesForState(connection, stateName);
 
+            // Print the JSON representation of activities
+            System.out.println(activitiesJson.toString(4)); // Output with indentation
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    private static JSONArray exportStatesToJson(Connection connection) throws SQLException {
-        String query = "SELECT state_id, state_name FROM states";
-        JSONArray statesJsonArray = new JSONArray();
+    private static JSONArray getActivitiesForState(Connection connection, String stateName) throws SQLException {
+        String query = "SELECT activity_id, activity_header, activity_text, image_url FROM activities WHERE state_name = ?";
+        JSONArray activitiesJson = new JSONArray();
 
-        try (Statement statement = connection.createStatement()) {
-            ResultSet resultSet = statement.executeQuery(query);
+        try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+            preparedStatement.setString(1, stateName);
 
+            ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                int stateId = resultSet.getInt("state_id");
-                String stateName = resultSet.getString("state_name");
+                // int activityId = resultSet.getInt("activity_id");
+                String activityHeader = resultSet.getString("activity_header");
+                String activityText = resultSet.getString("activity_text");
+                String imageURL = resultSet.getString("image_url");
 
-                JSONObject stateJson = new JSONObject();
-                stateJson.put("state_id", stateId);
-                stateJson.put("state_name", stateName);
+                // Create JSON object for each activity
+                JSONObject activityJson = new JSONObject();
+                // activityJson.put("activity_id", activityId);
+                activityJson.put("activity_header", activityHeader);
+                activityJson.put("activity_text", activityText);
+                activityJson.put("image_url", imageURL);
 
-                statesJsonArray.put(stateJson);
+                // Add activity JSON object to the array
+                activitiesJson.put(activityJson);
             }
         }
 
-        return statesJsonArray;
-    }
-
-    private static JSONArray exportRecommendationsToJson(Connection connection) throws SQLException {
-        String query = "SELECT recommendation_id, recommendation_text, state_id FROM recommendations";
-        JSONArray recommendationsJsonArray = new JSONArray();
-
-        try (Statement statement = connection.createStatement()) {
-            ResultSet resultSet = statement.executeQuery(query);
-
-            while (resultSet.next()) {
-                int recommendationId = resultSet.getInt("recommendation_id");
-                String recommendationText = resultSet.getString("recommendation_text");
-                int stateId = resultSet.getInt("state_id");
-
-                JSONObject recommendationJson = new JSONObject();
-                recommendationJson.put("recommendation_id", recommendationId);
-                recommendationJson.put("recommendation_text", recommendationText);
-                recommendationJson.put("state_id", stateId);
-
-                recommendationsJsonArray.put(recommendationJson);
-            }
-        }
-
-        return recommendationsJsonArray;
+        return activitiesJson;
     }
 }
