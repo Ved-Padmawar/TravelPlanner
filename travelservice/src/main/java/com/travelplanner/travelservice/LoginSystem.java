@@ -1,4 +1,4 @@
-package com.travelplanner.travelservice.models;
+package com.travelplanner.travelservice;
 import java.sql.*;
 import java.util.*;
 public class LoginSystem 
