@@ -17,7 +17,7 @@ public class ActivitiesController
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/india_activities";
         String username = "root";
-        String password = "7257";
+        String password = "root";
         Scanner sc = new Scanner(System.in);
 
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
