@@ -9,7 +9,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class ActivitiesController 
 {
@@ -35,6 +34,7 @@ public class ActivitiesController
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        sc.close();
     }
 
     private static JSONArray getActivitiesForState(Connection connection, String stateName) throws SQLException {
