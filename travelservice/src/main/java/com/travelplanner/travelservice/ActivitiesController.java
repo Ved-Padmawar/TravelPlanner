@@ -3,7 +3,7 @@ package com.travelplanner.travelservice;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
+import java.util.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -11,7 +11,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class ActivitiesController {
+public class ActivitiesController 
+{
 
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/india_activities";
@@ -64,5 +65,4 @@ public class ActivitiesController {
 
         return activitiesJson;
     }
-}
 }
