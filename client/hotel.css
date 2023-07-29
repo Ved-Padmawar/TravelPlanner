@@ -7,7 +7,7 @@
 /* Add custom styles to adjust the layout */
 .search-bar {
   max-width: 600px;
-  float:left
+  float:left;
   padding: 20px;
 }
 
@@ -258,6 +258,15 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+/* Add your CSS styles for the loading animation here (if needed) */
+.loading-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust the height according to your design */
+}
+
 
 @media (max-width: 768px) {
   .navbar-nav .nav-link {

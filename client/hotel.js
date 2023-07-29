@@ -59,9 +59,24 @@ function displayHotels(hotels) {
   }
 }
 
+// Function to show the loading animation
+function showLoadingAnimation() {
+  const loadingAnimation = document.querySelector('.loading-animation');
+  loadingAnimation.style.display = 'block';
+}
+
+// Function to hide the loading animation
+function hideLoadingAnimation() {
+  const loadingAnimation = document.querySelector('.loading-animation');
+  loadingAnimation.style.display = 'none';
+}
+
 // Function to handle the search button click event
 async function handleSearch(event) {
   event.preventDefault(); // Prevent the default form submission
+
+  // Show the loading animation while waiting for the result
+  showLoadingAnimation();
 
   // Get the input values
   const origin = document.getElementById('origin').value;
@@ -76,8 +91,15 @@ async function handleSearch(event) {
 
   // Display hotel data in the webpage
   displayHotels(hotels);
+
+  // Hide the loading animation after the result is displayed
+  hideLoadingAnimation();
 }
 
 // Attach the handleSearch function to the search button click event
 const searchBtn = document.getElementById('searchBtn');
 searchBtn.addEventListener('click', handleSearch);
+
+// Optional: Attach the handleSearch function to the form submission event
+const searchForm = document.querySelector('form');
+searchForm.addEventListener('submit', handleSearch);
