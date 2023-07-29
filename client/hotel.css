@@ -7,7 +7,7 @@
 /* Add custom styles to adjust the layout */
 .search-bar {
   max-width: 600px;
-  float:left
+  float:left;
   padding: 20px;
 }
 
