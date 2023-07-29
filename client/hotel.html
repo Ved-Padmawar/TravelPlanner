@@ -36,73 +36,82 @@
 </header>
 
 <main class="container">
-    <div class="search-bar">
-        <form>
-            <div class="row align-items-end">
-                <div class="parent">
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="origin">GOING TO</label>
-                            <input type="text" id="origin" class="form-control" placeholder="Enter your Destination">
+    <div class="row">
+        <div class="col">
+            <div class="search-bar">
+                <form>
+                    <div class="row align-items-end">
+                        <div class="parent">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="origin">GOING TO</label>
+                                    <input type="text" id="origin" class="form-control" placeholder="Enter your Destination">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="checkIn">Check-In</label>
+                                    <input type="date" id="checkIn" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="checkOut">Check-Out</label>
+                                    <input type="date" id="checkOut" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="guests">Guests</label>
+                                    <input type="number" id="guests" class="form-control" min="1" max="10" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 search1">
+                            <button type="submit" class="btn btn-primary search-btn" id="searchBtn">Search</button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="checkIn">Check-In</label>
-                            <input type="date" id="checkIn" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="checkOut">Check-Out</label>
-                            <input type="date" id="checkOut" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="guests">Guests</label>
-                            <input type="number" id="guests" class="form-control" min="1" max="10" value="1">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2 search1">
-                    <button type="submit" class="btn btn-primary search-btn" id="searchBtn">Search</button>
-                </div>
+                </form>
             </div>
-        </form>
+        </div>
     </div>
 
-    <div class="hotel-search-results">
-        <hr>
-        <div class="hotel-search-results">
-            <div class="hotel-card">
-                <div class="card-body">
-                    <h5 class="card-title">Hotel Name: </h5>
-                    <p class="card-info">Provider: </p>
-                    <i>Price: </i><br>
-                    <button class="btn btn-success book-btn">Book</button>
+    <div class="row mt-4">
+        <div class="col">
+            <div class="hotel-search-results">
+                <div class="loading-animation" style="display: none;">
+                    <!-- Your loading animation goes here -->
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
                 </div>
-            </div>
-
-            <div class="hotel-card">
-                <div class="card-body">
-                    <h5 class="card-title">Hotel Example 2</h5>
-                    <p class="card-info">Details of hotel Options 2</p>
-                    <button class="btn btn-success book-btn">Book</button>
+                <!-- Hotel cards will be dynamically generated here -->
+                <div class="hotel-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Name: </h5>
+                        <p class="card-info">Details of hotel Options 1</p>
+                        <button class="btn btn-success book-btn">Book</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="hotel-card">
-                <div class="card-body">
-                    <h5 class="card-title">Hotel Example 3</h5>
-                    <p class="card-info">Details of hotel Options 3</p>
-                    <button class="btn btn-success book-btn">Book</button>
+                <div class="hotel-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Example 2</h5>
+                        <p class="card-info">Details of hotel Options 2</p>
+                        <button class="btn btn-success book-btn">Book</button>
+                    </div>
+                </div>
+
+                <div class="hotel-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Example 3</h5>
+                        <p class="card-info">Details of hotel Options 3</p>
+                        <button class="btn btn-success book-btn">Book</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Hotel cards will be dynamically generated here -->
     </div>
-
 </main>
     
 <footer class="p-2">
