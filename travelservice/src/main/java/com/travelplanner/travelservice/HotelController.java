@@ -16,10 +16,17 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutionException;
 
 @CrossOrigin(maxAge = 3600)
 @RestController
 public class HotelController {
+
+    // Create a cache to store geoId based on location
+    private final Map<String, String> geoIdCache = new ConcurrentHashMap<>();
 
     @GetMapping("/hotels")
     public String index() {
@@ -32,12 +39,32 @@ public class HotelController {
             @RequestParam(value = "checkIn", required = false) String checkIn,
             @RequestParam(value = "checkOut", required = false) String checkOut) {
 
-        List<hotelModel> hotelDataList = new ArrayList<>();
+        if (location == null || checkIn == null || checkOut == null) {
+            return "Error: Missing required parameters.";
+        }
+
+        // Check the geoId cache first to see if the location is already cached
+        String geoId = geoIdCache.get(location);
+
+        // If not found in cache, fetch the geoId and cache it
+        if (geoId == null) {
+            try {
+                geoId = getGeoId(location);
+                if (geoId != null) {
+                    geoIdCache.put(location, geoId);
+                } else {
+                    return "Error: Unable to fetch geoId for the location.";
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+                return "Error: Unable to fetch geoId for the location.";
+            }
+        }
 
         try {
             // Construct the API URL with the dynamic inputs
             String apiUrl = "https://tripadvisor16.p.rapidapi.com/api/v1/hotels/searchHotels?" +
-                    "geoId=" + getGeoId(location) +
+                    "geoId=" + geoId +
                     "&checkIn=" + checkIn +
                     "&checkOut=" + checkOut +
                     "&pageNumber=1&currencyCode=USD";
@@ -46,29 +73,46 @@ public class HotelController {
             String rapidApiKey = "3ffa31065cmshdb0bf1e8e3afe8cp1bfa1fjsn0ee01bcde51e";
             String rapidApiHost = "tripadvisor16.p.rapidapi.com";
 
-            // Send a GET request to the API endpoint
-            URL url = new URL(apiUrl);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
-            connection.setRequestProperty("X-RapidAPI-Key", rapidApiKey);
-            connection.setRequestProperty("X-RapidAPI-Host", rapidApiHost);
+            // Send a GET request to the API endpoint asynchronously
+            CompletableFuture<String> apiResponseFuture = CompletableFuture.supplyAsync(() -> {
+                try {
+                    URL url = new URL(apiUrl);
+                    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                    connection.setRequestMethod("GET");
+                    connection.setRequestProperty("X-RapidAPI-Key", rapidApiKey);
+                    connection.setRequestProperty("X-RapidAPI-Host", rapidApiHost);
 
-            // Check if the request was successful (status code 200)
-            int responseCode = connection.getResponseCode();
-            if (responseCode == HttpURLConnection.HTTP_OK) {
-                // Read the response
-                BufferedReader responseReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-                StringBuilder responseContent = new StringBuilder();
-                String responseLine;
-                while ((responseLine = responseReader.readLine()) != null) {
-                    responseContent.append(responseLine);
+                    // Check if the request was successful (status code 200)
+                    int responseCode = connection.getResponseCode();
+                    if (responseCode == HttpURLConnection.HTTP_OK) {
+                        // Read the response
+                        BufferedReader responseReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                        StringBuilder responseContent = new StringBuilder();
+                        String responseLine;
+                        while ((responseLine = responseReader.readLine()) != null) {
+                            responseContent.append(responseLine);
+                        }
+                        responseReader.close();
+                        connection.disconnect();
+                        return responseContent.toString();
+                    } else {
+                        System.out.println("Error occurred while fetching hotel data. Response code: " + responseCode);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-                responseReader.close();
+                return null;
+            });
 
+            // Wait for the CompletableFuture to complete
+            String apiResponse = apiResponseFuture.get();
+
+            if (apiResponse != null) {
                 // Convert the API response JSON to HotelModel objects
-                JSONObject jsonObject = new JSONObject(responseContent.toString());
+                JSONObject jsonObject = new JSONObject(apiResponse);
                 JSONArray hotelArray = jsonObject.getJSONObject("data").getJSONArray("data");
 
+                List<hotelModel> hotelDataList = new ArrayList<>();
                 for (int i = 0; i < hotelArray.length(); i++) {
                     JSONObject hotelJson = hotelArray.getJSONObject(i);
                     hotelModel hotel = new hotelModel(
@@ -81,63 +125,56 @@ public class HotelController {
                 }
 
                 Gson gson = new Gson();
-                String jsonArrayOutput = gson.toJson(hotelDataList);
-                return jsonArrayOutput;
-
-            } else {
-                System.out.println("Error occurred while fetching hotel data. Response code: " + responseCode);
+                return gson.toJson(hotelDataList);
             }
-            connection.disconnect();
-        } catch (IOException e) {
+        } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
 
-        return "Error";
+        return "Error: Unable to fetch hotel data.";
     }
 
     // Helper method to get the geoId based on the location name
-    private String getGeoId(String location) {
-        try {
-            String apiUrl = "https://tripadvisor16.p.rapidapi.com/api/v1/hotels/searchLocation?query=" + location;
+    private String getGeoId(String location) throws IOException {
+        String apiUrl = "https://tripadvisor16.p.rapidapi.com/api/v1/hotels/searchLocation?query=" + location;
 
-            String rapidApiKey = "3ffa31065cmshdb0bf1e8e3afe8cp1bfa1fjsn0ee01bcde51e";
-            String rapidApiHost = "tripadvisor16.p.rapidapi.com";
+        String rapidApiKey = "3ffa31065cmshdb0bf1e8e3afe8cp1bfa1fjsn0ee01bcde51e";
+        String rapidApiHost = "tripadvisor16.p.rapidapi.com";
 
-            URL url = new URL(apiUrl);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("GET");
-            connection.setRequestProperty("X-RapidAPI-Key", rapidApiKey);
-            connection.setRequestProperty("X-RapidAPI-Host", rapidApiHost);
+        URL url = new URL(apiUrl);
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("GET");
+        connection.setRequestProperty("X-RapidAPI-Key", rapidApiKey);
+        connection.setRequestProperty("X-RapidAPI-Host", rapidApiHost);
 
-            int responseCode = connection.getResponseCode();
-            if (responseCode == HttpURLConnection.HTTP_OK) {
-                BufferedReader responseReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-                StringBuilder responseContent = new StringBuilder();
-                String responseLine;
-                while ((responseLine = responseReader.readLine()) != null) {
-                    responseContent.append(responseLine);
-                }
-                responseReader.close();
+        int responseCode = connection.getResponseCode();
+        if (responseCode == HttpURLConnection.HTTP_OK) {
+            BufferedReader responseReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            StringBuilder responseContent = new StringBuilder();
+            String responseLine;
+            while ((responseLine = responseReader.readLine()) != null) {
+                responseContent.append(responseLine);
+            }
+            responseReader.close();
 
-                JSONObject jsonObject = new JSONObject(responseContent.toString());
-                JSONArray locationArray = jsonObject.getJSONArray("data");
-                for (int i = 0; i < locationArray.length(); i++) {
-                    JSONObject locationJson = locationArray.getJSONObject(i);
-                    if (locationJson.has("secondaryText") && !locationJson.isNull("secondaryText")
-                            && locationJson.has("geoId") && !locationJson.isNull("geoId")) {
-                        String secondaryText = locationJson.getString("secondaryText");
-                        if (secondaryText.contains("India")) {
-                            return locationJson.getString("geoId").split(";")[1];
-                        }
+            JSONObject jsonObject = new JSONObject(responseContent.toString());
+            JSONArray locationArray = jsonObject.getJSONArray("data");
+            for (int i = 0; i < locationArray.length(); i++) {
+                JSONObject locationJson = locationArray.getJSONObject(i);
+                if (locationJson.has("secondaryText") && !locationJson.isNull("secondaryText")
+                        && locationJson.has("geoId") && !locationJson.isNull("geoId")) {
+                    String secondaryText = locationJson.getString("secondaryText");
+                    if (secondaryText.contains("India")) {
+                        connection.disconnect();
+                        return locationJson.getString("geoId").split(";")[1];
                     }
                 }
-            } else {
-                System.out.println("Error occurred while fetching geoId. Response code: " + responseCode);
             }
-            connection.disconnect();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } else {
+            System.out.println("Error occurred while fetching geoId. Response code: " + responseCode);
         }
+        connection.disconnect();
+
         return null;
     }
 }
