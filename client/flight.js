@@ -33,6 +33,14 @@ const apiUrl = `http://localhost:8080/flights/search?fromLoc=${origin}&toLoc=${d
       console.log('Error:', error);
     });
 }
+
+// const btn = document.getElementsById('btn');
+
+// btn.addEventListener('click',function handleClick(){
+//   btn.textContent = 'BOOKED';
+// });
+
+
 // Function to update the flight fare details in the webpage
 function updateFlightFares(data) {
   // Clear the existing flight cards
@@ -58,6 +66,12 @@ function updateFlightFares(data) {
     const bookButton = document.createElement('button');
     bookButton.classList.add('btn', 'btn-success', 'book-btn');
     bookButton.textContent = 'Book';
+
+        // Add event listener to the book button
+        bookButton.addEventListener('click', () => {
+          bookButton.textContent = 'Booked';
+          bookButton.disabled = true; // Optionally, you can disable the button after it's booked.
+        });
 
     cardBody.appendChild(cardTitle);
     cardBody.appendChild(cardInfo);

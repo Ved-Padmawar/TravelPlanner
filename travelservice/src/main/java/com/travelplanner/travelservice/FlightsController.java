@@ -23,7 +23,7 @@ public class FlightsController {
         return "list of flights";
     }
     @GetMapping("/flights/search")
-    public String getSpecificFlightData(
+    public String getSpecificFlightData(    
             @RequestParam(value = "fromLoc", required = false) String fromLoc,
             @RequestParam(value = "toLoc", required = false) String toLoc,
             @RequestParam(value = "date_from", required = false) String date_from) {
